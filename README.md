@@ -120,9 +120,9 @@ mvn spring-boot:run
 
 You can import these collections individually depending on the feature set:
 
-* 👉 [Auth Collection](docs/postman-auth-collection.json)
-* 👉 [Admin Flight Management](docs/postman-admin-flights-collection.json)
-* 👉 [User Booking Operations](docs/postman-user-bookings-collection.json)
+* 👉 [Auth Collection](docs/Authentication&Author.postman_collection.json)
+* 👉 [Admin Flight Management](docs/AdminFlight.postman_collection.json)
+* 👉 [User Booking Operations](docs/UserBookings.postman_collection.json)
 
 > Each collection includes fully tested endpoints, sample request bodies, and token examples.
 
