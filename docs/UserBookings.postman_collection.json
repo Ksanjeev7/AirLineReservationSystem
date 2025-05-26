@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "2437d43b-4794-4c0a-a26a-b98aeb5aea16",
+		"name": "UserBookings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33736095"
+	},
+	"item": [
+		{
+			"name": "My-Bookings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJQYXZhbkt1bWFyIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NDgyNTMyOTAsImV4cCI6MTc0ODI1Njg5MH0.hVXKlDCFlGNnUXq-Z8vrCigx_jRu7p8aE5DGPkDPorYo5OqXDZ25J0IyuslY8N5TDOVIhjOvziAGLzh0LEL9fg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "_CSRF",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightId\" : \"14\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/bookings/my-bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings",
+						"my-bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BookFlight",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJQcmF2ZWVuS3VtYXIiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDgyNTI0OTAsImV4cCI6MTc0ODI1NjA5MH0.2wsYSEzpvejT3vVO7aJUZVNjj2VtFwSCflqQOTAXiJH_GqKwdTvJFS9JeL0ENVLDjbmOZMOAStfmEU0BF_ulrg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "_CSRF",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightId\" : \"1\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/bookings/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelBooking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJQcmF2ZWVuS3VtYXIiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDgyNTE2NjcsImV4cCI6MTc0ODI1NTI2N30.LxbB9F5tqiqeWNVZPZG7HLdHfwtJ1V7Z0Db-7giDunvGTMBDqs_fqNjaLBYqZ9m1z9qS11v1tMNzVRNkYYXhtg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "_CSRF",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightId\" : \"14\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/bookings/cancel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchFlightWithSourceandDestinationAndDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJQYXZhbkt1bWFyIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NDgyNDg4MjQsImV4cCI6MTc0ODI1MjQyNH0.0juK4yw5I00K89bK3W0UNtHnjJUvKLewKomPQo47fY0U93jZDqLzF_4quny2khjV2Ah134ZPSV2mVyFHZFi8WA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "_CSRF",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightId\" : \"14\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/bookings/available-flights?source=Bangalore&destination=Chennai&Date=2025-05-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings",
+						"available-flights"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "Bangalore"
+						},
+						{
+							"key": "destination",
+							"value": "Chennai"
+						},
+						{
+							"key": "Date",
+							"value": "2025-05-31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
